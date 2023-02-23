@@ -3,10 +3,10 @@
 # а Катя сделала в два раза больше журавликов, чем Петя и Сережа вместе?
 
 # Дано:
-# Петя+Катя=Sж
+# Петя(Nж)+Катя(4Nж)=5Nж
 # Петя+Сережа=2Nж
 # Катя=2*(2Nж)
-
+#
 # *Пример:*
 #
 # 6 -> 1  4  1
@@ -15,9 +15,15 @@
 
 howMuch=int(input('Сколько всего журавликов?: '))
 
-katya=float(((howMuch/2)/3)+(howMuch/2))
-petr=float(katya/4)
-serega=float(katya/4)
-print(f'{petr}  {katya}  {serega}')
-print(f'Сколько всего журавликов: {serega + katya + petr}')
-print(f'Сколько сделала Катя: {2 * (serega + petr)} ')
+# katya=float(((howMuch/2)/3)+(howMuch/2))
+# petr=float(katya/4)
+# serega=float(katya/4)
+# print(f'{petr}  {katya}  {serega}')
+# print(f'Сколько всего журавликов: {serega + katya + petr}')
+# print(f'Сколько сделала Катя: {2 * (serega + petr)} ')
+if howMuch % 6:
+    print('ERROR')
+else:
+    k=2*howMuch//3
+    p=s=howMuch//6
+    print(p, k, s)

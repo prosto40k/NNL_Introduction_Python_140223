@@ -14,7 +14,7 @@ a=int(input('Введите трехзначное число: '))
 # print(b)
 box4number=int(0)
 box4sum=int(0)
-while a>0:
+while a>0: ## while a:
     box4number=a%10
     box4sum+=box4number
     a=a//10
