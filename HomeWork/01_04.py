@@ -6,10 +6,10 @@
 # 3 2 4 -> yes
 # 3 2 1 -> no
 
-n=int(4)
-m=int(5)
+n=int(input('Длина  плитки (дольки) : '))
+m=int(input('Ширина плитки (дольки) : '))
 k=int(input('Сколько долек вы хотите: '))
-if k%n==0 or k%m==0 :
+if k%n==0 or k%m==0: ## and k<m*n
     print('Yes')
 else:
     print('No')

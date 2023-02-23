@@ -10,7 +10,7 @@
 # 385916 -> yes
 # 123456 -> no
 
-ticket_n=int(385916)
+ticket_n=int(185914)
 first_half=int(ticket_n/1000)
 print(f'Цифры первой половины билета: {first_half}')
 second_half=ticket_n%1000
@@ -20,19 +20,28 @@ box4number=int(0)
 box4sum1=int(0)
 box4sum2=int(0)
 
-while first_half>0:
-    box4number=first_half%10
-    box4sum1+=box4number
-    first_half=first_half//10
-print(f'Сумма цифр первой половины билета: {box4sum1}')
+# while first_half:
+#     box4number=first_half%10
+#     box4sum1+=box4number
+#     first_half=first_half//10
+# print(f'Сумма цифр первой половины билета: {box4sum1}')
+#
+# while second_half:
+#     box4number=second_half%10
+#     box4sum2+=box4number
+#     second_half=second_half//10
+# print(f'Сумма цифр второй половины билета: {box4sum2}')
+#
+# if box4sum1!=box4sum2:
+#     print('No')
+# else:
+#     print('Yes')
 
-while second_half>0:
-    box4number=second_half%10
-    box4sum2+=box4number
-    second_half=second_half//10
-print(f'Сумма цифр второй половины билета: {box4sum2}')
-
-if box4sum1!=box4sum2:
-    print('No')
-else:
-    print('Yes')
+while ticket_n:
+    box4number=ticket_n%10
+    if ticket_n>999:
+        box4sum1+=box4number
+    else:
+        box4sum2+=box4number
+    ticket_n//=10
+print(f'The ticket is lucky: {box4sum2==box4sum1}')
