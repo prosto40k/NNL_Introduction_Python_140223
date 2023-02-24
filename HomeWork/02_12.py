@@ -7,19 +7,14 @@
 # 5 6 -> 2 3
 s=int(input('Сумма:        '))
 p=int(input("Произведение: "))
-x=1
-y=0
-print('Lets go')
-while p!=x*y or s!=x+y:
-    if p!=x*y:
-        x+=1
-    if s!=x+y:
-        y+=1
-# while s!=x+y:
-#     x+=1
-# while p!=x*y:
-#     y+=1
 
-print(x,y)
+print('Lets go')
+for x in range(1000):
+    for y in range(1000):
+        if s==x+y and p==x*y:
+            print(x,y)
+
+
+
 
 
