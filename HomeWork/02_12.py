@@ -7,11 +7,15 @@
 # 5 6 -> 2 3
 s=int(input('Сумма:        '))
 p=int(input("Произведение: "))
-
+a=0
+b=0
 print('Lets go')
 for x in range(1000):
     for y in range(1000):
         if s==x+y and p==x*y:
             print(x,y)
-else:
-    print('ERROR')
+            a=x
+            b=y
+if s!=a+b and p!=a*b:
+    print('Error')
+
