@@ -26,6 +26,11 @@ for i in range(days):
     if temp>0:
         count+=1
     else:
-        box=count
+        if count>box:
+            box=count
         count=0
-print(box)
+
+if count>box:
+    print(count)
+else:
+    print(box)
