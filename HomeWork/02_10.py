@@ -9,7 +9,7 @@ coins=int(input('Кол-во монет'))
 count1=0
 count2=0
 for i in range(coins):
-    temp=int(input('Введите 0 или 1'))
+    temp=int(input('Введите 0 или 1:'))
     if temp==1:
         count1+=1
     else:
