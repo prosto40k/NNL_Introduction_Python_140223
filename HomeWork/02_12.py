@@ -13,8 +13,5 @@ for x in range(1000):
     for y in range(1000):
         if s==x+y and p==x*y:
             print(x,y)
-
-
-
-
-
+else:
+    print('ERROR')
