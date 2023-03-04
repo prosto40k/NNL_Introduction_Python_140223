@@ -25,7 +25,7 @@ for i in range(len(list_1)):
 
 print(list_1)
 if result == 0:
-    print(f"Прямое попадание:\n{box2el+1}:{list_1[box2el]}")
+    print(f"Прямое попадание:\n{box2el}:{list_1[box2el]}")
 else:
-    print(f"Ближайшее:\n{box2el+1}:{list_1[box2el]}")
+    print(f"Ближайшее:\n{box2el}:{list_1[box2el]}")
 
