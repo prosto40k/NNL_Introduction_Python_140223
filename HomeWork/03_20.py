@@ -12,72 +12,37 @@
 # ноутбук
 #     12
 
-# list_1=['A','E','I','O','U','L','N','S','T','R','D','G','B','C','M','P','F','H','V','W','Y','K','J','X','Q','Z']
-dictionary = {}
-dictionary = {1: 'A''E''I''O''U''L''N''S''T''R', 2: 'D''G', 3: 'B' 'C' 'M' 'P',4:'F' 'H' 'V' 'W' 'Y', 5: 'K',
-8:'J' 'X', 10:'Q' 'Z'}
+list_1 = ['A', 'E', 'I', 'O', 'U', 'L', 'N', 'S', 'T', 'R', 'D', 'G', 'B', 'C', 'M', 'P', 'F', 'H', 'V', 'W', 'Y', 'K', 'J', 'X', 'Q', 'Z']
 
-word=str(input('Input word'))
-score=0
-item=0
-
-for i in word:
-
-    if word[i] == dictionary[i]:
+word = str(input('Enter words on english language: '))
+word = word.upper()
+score = 0
+for i in range(len(word)):
+    # print(i)
+    if word[i] == list_1[0] or word[i] == list_1[1] or word[i] == list_1[2] or word[i] == list_1[3] or word[i] == list_1[4] or word[i] == list_1[5] or word[i] == list_1[6] or word[i] == list_1[7] or word[i] == list_1[8] or word[i] == list_1[9]:
         score += 1
-        print(score)
+        print(f"1 очко:{word[i]}")
+    elif word[i] == list_1[10] or word[i] == list_1[11]:
+        score += 2
+        print(f"2 очко:{word[i]}")
+    elif word[i] == list_1[12] or word[i] == list_1[13] or word[i] == list_1[14] or word[i] == list_1[15]:
+        score += 3
+        print(f"3 очко:{word[i]}")
+    elif word[i] == list_1[16] or word[i] == list_1[17] or word[i] == list_1[18] or word[i] == list_1[19] or word[i] == list_1[20]:
+        score += 4
+        print(f"4 очко:{word[i]}")
+    elif word[i] == list_1[21]:
+        score += 5
+        print(f"5 очко:{word[i]}")
+    elif word[i] == list_1[22] or word[i] == list_1[23]:
+        score += 8
+        print(f"8 очко:{word[i]}")
+    elif word[i] == list_1[24] or word[i] == list_1[25]:
+        score += 10
+        print(f"10 очко:{word[i]}")
 
+print(score)
 
-
-
-
-
-
-
-
-
-# word=str(input('Input word'))
-# word=str(input())
-# word=word.upper()
-# score=0
-# box41score=0
-# box42score=0
-# box43score=0
-# box44score=0
-# box45score=0
-# box48score=0
-# box410score=0
-#
-
-# list_1=['A','E','I','O','U','L','N','S','T','R']
-# if list_1[0]==word:
-#     score+=1
-# print(score)
-
-
-# for i in range(len(word)):
-#     # print(i)
-#     if list_1[0]==word[i]:
-#         score+=1
-#         print(f"1 очко:{list_1[i]}")
-#     elif list_1[9:10]==word[i]:
-#         score += 2
-#         print(f"2 очко:{list_1[i]}")
-#     # elif 11<=i<=15:
-#     #     print(f"3 очко:{list_1[i]}")
-#     # elif 15 <= i <= 20:
-#     #     print(f"4 очко:{list_1[i]}")
-#     # elif 20 <= i <= 21:
-#     #     print(f"5 очко:{list_1[i]}")
-#     # elif 21 <= i <= 23:
-#     #     print(f"8 очко:{list_1[i]}")
-#     # elif 23 <= i <= 25:
-#     #     print(f"10 очко:{list_1[i]}")
-#
-# print(score)
-# print(word[i])
-# print(list_1[i])
-# print(word)
 
 
 

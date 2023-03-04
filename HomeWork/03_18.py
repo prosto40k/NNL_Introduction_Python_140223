@@ -10,27 +10,22 @@
 #     6
 #     -> 5
 
-# list_1 = [1, 2, 2, 4, 5]
-list_1 = []
-n = int(input('Введите число:'))
-x = int(input('Самое близкое к элементу:'))
+list_1 = [1, 4, 2, 2, 5]
+x = int(input('Ищем:'))
 result = 0
-# box=0
-box1 = -1
-box2el1 = 0
-box2el2 = 0
-for i in range(1, n+1):
-    list_1.append(i)
-    result = x-list_1[i-1]
-    print(result)
+box2el = 0
+for i in range(len(list_1)):
+    result = x-list_1[i]
+    # print(result)
     if result == 0:
-        box1 = result
-        box2el1 = i
-    else:
-        box2el2 = i
+        box2el = i
+        break
+    elif result > 0:
+        box2el = i
+
 print(list_1)
-if box1 == 0:
-    print(f"Прямое попадание:{list_1[box2el1]}")
+if result == 0:
+    print(f"Прямое попадание:\n{box2el+1}:{list_1[box2el]}")
 else:
-    print(f"Ближайшее:{list_1[box2el2]}")
+    print(f"Ближайшее:\n{box2el+1}:{list_1[box2el]}")
 

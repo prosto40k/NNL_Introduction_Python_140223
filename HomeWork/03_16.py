@@ -9,24 +9,13 @@
 # 3
 # -> 1
 
-# list_1 =[[list()]]
-# size=6
-# x=None
-# count=0
-#
-# for i in range(size):
-#     if list_1==x:
-#         count+=1
-# print(list_1)
-# print(count)
 list_1 = []
-n=int(input('Введите число:'))
-count=0
-x=3
+n = int(input('Введите число:'))
+count = 0
+x = 3
 for i in range(1, n+1):
     list_1.append(i)
-    if i==x:
-        count+=1
+    if list_1[i-1] == x:
+        count += 1
 print(list_1)
-print(f'Кол-во цифор {x}')
-print(count)
+print(f'Кол-во цифор {x}:{count}')
